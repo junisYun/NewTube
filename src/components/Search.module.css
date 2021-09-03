@@ -1,0 +1,14 @@
+.searchBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 50px;
+}
+.searchInput {
+  width: 80%;
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
