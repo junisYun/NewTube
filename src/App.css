@@ -1,4 +1,6 @@
-.App {
-  text-align: center;
-  width: 80%;
+body {
+  position: absolute;
+}
+li {
+  list-style: none;
 }
