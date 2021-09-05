@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/NewTube/static/css/main.15e7f2f3.chunk.css",
+    "main.js": "/NewTube/static/js/main.a98eebb1.chunk.js",
+    "main.js.map": "/NewTube/static/js/main.a98eebb1.chunk.js.map",
+    "runtime-main.js": "/NewTube/static/js/runtime-main.a2eaee3d.js",
+    "runtime-main.js.map": "/NewTube/static/js/runtime-main.a2eaee3d.js.map",
+    "static/js/2.317d966d.chunk.js": "/NewTube/static/js/2.317d966d.chunk.js",
+    "static/js/2.317d966d.chunk.js.map": "/NewTube/static/js/2.317d966d.chunk.js.map",
+    "index.html": "/NewTube/index.html",
+    "static/css/main.15e7f2f3.chunk.css.map": "/NewTube/static/css/main.15e7f2f3.chunk.css.map",
+    "static/js/2.317d966d.chunk.js.LICENSE.txt": "/NewTube/static/js/2.317d966d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a2eaee3d.js",
+    "static/js/2.317d966d.chunk.js",
+    "static/css/main.15e7f2f3.chunk.css",
+    "static/js/main.a98eebb1.chunk.js"
+  ]
+}
