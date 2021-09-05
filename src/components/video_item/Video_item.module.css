@@ -25,8 +25,6 @@
     --font-size-midium: 0.8rem;
   }
 }
-a {
-}
 .video__card {
   display: grid;
   grid-template-columns: 1fr 2fr;

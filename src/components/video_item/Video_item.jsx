@@ -7,8 +7,12 @@ const Video_item = (props) => {
   };
   const videoURL = `https://www.youtube.com/watch?v=${props.video.id}`;
 
+  const handleClickVideo = () => {
+    props.handleClickVideo(props.video);
+  };
+
   return (
-    <li className={styles.video__card}>
+    <li className={`${styles.video__card}`} onClick={handleClickVideo}>
       <div className={styles.video__image__overlay}>
         <img className={styles.video__image} src={props.video.snippet.thumbnails.medium.url} alt="thumbnails" />
       </div>
