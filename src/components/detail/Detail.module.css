@@ -8,17 +8,13 @@ a {
 }
 .detail {
   margin-top: 70px;
-  margin-right: 10px;
-  width: 69.8%;
-  position: fixed;
+  margin-right: 0;
+  width: 100%;
 }
 .meta {
   margin: 5px 20px;
   overflow-y: scroll;
-  height: 200px;
-}
-.mete > h2 {
-  color: #ffc2c2;
+  height: 1000px;
 }
 .comment {
   display: flex;

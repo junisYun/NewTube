@@ -34,7 +34,7 @@ class NewTube {
     const response = await this.client.get('commentThreads', {
       params: {
         part: 'snippet',
-        maxResult: 100,
+        maxResults: 100,
         videoId: videoId,
         order: 'relevance',
       },

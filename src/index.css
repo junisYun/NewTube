@@ -12,7 +12,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 ::-webkit-scrollbar {
-  width: 0.8rem;
+  width: 0.6rem;
   background-color: gray;
   border-radius: 20px;
 }
