@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/NewTube/static/css/main.0aa141ad.chunk.css",
-    "main.js": "/NewTube/static/js/main.f09a82ac.chunk.js",
-    "main.js.map": "/NewTube/static/js/main.f09a82ac.chunk.js.map",
+    "main.css": "/NewTube/static/css/main.f5903fdf.chunk.css",
+    "main.js": "/NewTube/static/js/main.c3015316.chunk.js",
+    "main.js.map": "/NewTube/static/js/main.c3015316.chunk.js.map",
     "runtime-main.js": "/NewTube/static/js/runtime-main.a2eaee3d.js",
     "runtime-main.js.map": "/NewTube/static/js/runtime-main.a2eaee3d.js.map",
     "static/js/2.892920a6.chunk.js": "/NewTube/static/js/2.892920a6.chunk.js",
     "static/js/2.892920a6.chunk.js.map": "/NewTube/static/js/2.892920a6.chunk.js.map",
     "index.html": "/NewTube/index.html",
-    "static/css/main.0aa141ad.chunk.css.map": "/NewTube/static/css/main.0aa141ad.chunk.css.map",
+    "static/css/main.f5903fdf.chunk.css.map": "/NewTube/static/css/main.f5903fdf.chunk.css.map",
     "static/js/2.892920a6.chunk.js.LICENSE.txt": "/NewTube/static/js/2.892920a6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a2eaee3d.js",
     "static/js/2.892920a6.chunk.js",
-    "static/css/main.0aa141ad.chunk.css",
-    "static/js/main.f09a82ac.chunk.js"
+    "static/css/main.f5903fdf.chunk.css",
+    "static/js/main.c3015316.chunk.js"
   ]
 }
