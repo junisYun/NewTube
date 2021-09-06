@@ -5,10 +5,10 @@ const Video_item = (props) => {
   const refacName = (name) => {
     return name.replaceAll('&#39;', "'").replaceAll('&amp;', '&').replaceAll('&quot;', '"');
   };
-  const videoURL = `https://www.youtube.com/watch?v=${props.video.id}`;
 
   const handleClickVideo = () => {
     props.handleClickVideo(props.video);
+    props.getComment(props.video.id);
   };
 
   return (

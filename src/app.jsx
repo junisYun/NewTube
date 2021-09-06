@@ -6,7 +6,14 @@ import VideoList from './components/video_list/Video_list';
 
 function App({ newtube }) {
   const [videos, setVideos] = useState([]);
+  const [comments, setComments] = useState([]);
   const [selectedVideo, setSelectedVideo] = useState(null);
+
+  useEffect(() => {
+    newtube //
+      .mostPopular()
+      .then((items) => setVideos(items));
+  }, [newtube]);
 
   const search = (query) => {
     newtube //
@@ -16,28 +23,44 @@ function App({ newtube }) {
         setSelectedVideo(null);
       });
   };
-  useEffect(() => {
+
+  const getComments = (videoId) => {
+    newtube //
+      .comment(videoId)
+      .then((items) => {
+        setComments(items);
+        console.log('comment', items);
+      });
+  };
+  const mainPage = () => {
     newtube //
       .mostPopular()
-      .then((items) => setVideos(items));
-  }, []);
+      .then((items) => {
+        setVideos(items);
+        setSelectedVideo(null);
+      });
+  };
   const handleClickVideo = (video) => {
     setSelectedVideo(video);
   };
-  console.log(videos);
-  console.log(selectedVideo);
+
   return (
     <>
-      <Search onSearch={search} />
+      <Search onSearch={search} onMainPage={mainPage} />
       <section className={styles.content}>
         {selectedVideo ? (
           <div className={styles.detail}>
-            <Detail video={selectedVideo} videoURL={selectedVideo} />
+            <Detail video={selectedVideo} comments={comments} />
           </div>
         ) : null}
 
         <div className={styles.list}>
-          <VideoList videos={videos} handleClickVideo={handleClickVideo} display={selectedVideo ? 'list' : 'grid'} />
+          <VideoList
+            videos={videos}
+            handleClickVideo={handleClickVideo}
+            getComment={getComments}
+            display={selectedVideo ? 'list' : 'grid'}
+          />
         </div>
       </section>
     </>

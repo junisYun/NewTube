@@ -19,7 +19,7 @@ const Search = (props) => {
   return (
     <form action="">
       <div className={styles.searchBar}>
-        <div className={styles.title}>
+        <div className={styles.title} onClick={() => props.onMainPage()}>
           <span className={styles.title__logo}>
             <FontAwesomeIcon icon={faYoutube} />
           </span>

@@ -6,11 +6,14 @@ const Video_list = (props) => {
   const handleClickVideo = (video) => {
     props.handleClickVideo(video);
   };
+  const getComment = (videoId) => {
+    props.getComment(videoId);
+  };
   const displayType = props.display === 'list' ? styles.list : styles.grid;
   return (
     <ul className={`${styles.video} ${displayType}`}>
       {props.videos.map((item) => {
-        return <VideoItem key={item.id} video={item} handleClickVideo={handleClickVideo} display={props.display} />;
+        return <VideoItem key={item.id} video={item} handleClickVideo={handleClickVideo} getComment={getComment} display={props.display} />;
       })}
     </ul>
   );
